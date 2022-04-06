@@ -29,3 +29,16 @@ client.on('messageCreate', message => {
     console.error('Erro:' + err);
   }
 });
+
+process.on("multipleResolves", (type, promise, reason) => {
+    console.log('🚫 Erro Detectado:\n\n!' + type, promise, reason)
+})
+process.on("unhandRejection", (reason, promise) => {
+    console.log('🚫 Erro Detectado:\n\n!' + reason, promise)
+})
+process.on("uncaughtException", (error, origin) => {
+    console.log('🚫 Erro Detectado:\n\n!' + error, origin)
+})
+process.on("uncaughtExceptionMonitor", (error, origin) => {
+    console.log('🚫 Erro Detectado:\n\n!' + error, origin)
+})
