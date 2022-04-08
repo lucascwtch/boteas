@@ -61,7 +61,7 @@ module.exports = {
                             allow : ['VIEW_CHANNEL', 'SEND_MESSAGES', 'ATTACH_FILES']
                         },
                         {
-                        id: '954142405962133504',
+                        id: '959205370251866112',
                         allow: ['VIEW_CHANNEL', 'SEND_MESSAGES', 'ATTACH_FILES'] // perm para o cargo ter acesso
                         }
                     ]
